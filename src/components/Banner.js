@@ -17,7 +17,6 @@ const Banner = () => {
   const fetchData = async () => {
     // 현재 상영중인 영화 정보를 가져오기 (다수)
     const response = await axios.get(requests.fetchNowPlaying);
-    console.log(response);
 
     // 여러 영화 중 하나의 영화 ID 가져오기
     const movieId = response.data.results[
